@@ -6,7 +6,7 @@
 This project contains one main REST API module:
 
 1. **Weather Info API**  
-   - Provides weather information for a given **Pincode** and **date**.  
+   - Provides weather information for a given **Pincode** and **date**.
    - Optimized to reduce API calls using caching in the database.
 
 ## Technology Stack
