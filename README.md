@@ -66,7 +66,7 @@ json
 }
 
 **Error Responses**
-Status->	Error-> Reason	
+Status->	Error->  Reason	
 400-> Invalid Pincode / Date-> "Pincode must be a 6-digit number"/"Date is required(today only allowed)"
 400->Extra / malformed JSON-> "Malformed JSON request"
 503-> API down-> "Weather API is unreachable"
