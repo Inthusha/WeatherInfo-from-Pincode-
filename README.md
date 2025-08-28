@@ -33,11 +33,17 @@ spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
 2. Add OpenWeather API Key in application.properties
 openweather.api.key=YOUR_API_KEY
 
-3. Build & Run
+**Running the Application**
+**Option 1: Using Maven**
 mvn clean install
 mvn spring-boot:run
 
-The application will run on http://localhost:8080
+**Option 2: Using IDE (Eclipse/IntelliJ)**
+Right-click the main class JsonDatasetApplication.java
+Run as Spring Boot App
+
+The application will start at:
+http://localhost:8080
 
 **Weather Info API**
 Endpoint
@@ -71,4 +77,6 @@ Status->	Error->  Reason
 400->Extra / malformed JSON-> "Malformed JSON request"
 503-> API down-> "Weather API is unreachable"
 
-
+**Table contains**
+Pincode table->id,pincode,latitude,longitude
+Weather->id,pincode_id,date,temperature,humidity,windspeed,description,rawjson
